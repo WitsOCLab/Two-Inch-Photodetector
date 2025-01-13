@@ -1607,6 +1607,167 @@
 				)
 			)
 		)
+		(symbol "Device:R_Potentiometer_Trim"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_Trim"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Trim-potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable trimpot trimmer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_0_1"
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode:SS210"
 			(pin_numbers hide)
 			(pin_names
@@ -2474,6 +2635,18 @@
 		)
 	)
 	(junction
+		(at 130.81 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03391c18-b369-4eb6-b586-c79e9c63120f")
+	)
+	(junction
+		(at 111.76 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b2c6168-44a2-4437-acc6-ef24154a2567")
+	)
+	(junction
 		(at 133.35 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2965,6 +3138,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 125.73) (xy 130.81 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a2534e3-4637-4c66-88a0-6d368a227a59")
+	)
+	(wire
+		(pts
 			(xy 52.07 66.04) (xy 52.07 67.31)
 		)
 		(stroke
@@ -3055,6 +3238,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 101.6) (xy 111.76 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ea8e4c3-9e35-4edc-8905-fed72176b55a")
+	)
+	(wire
+		(pts
 			(xy 135.89 160.02) (xy 135.89 165.1)
 		)
 		(stroke
@@ -3082,6 +3275,16 @@
 			(type default)
 		)
 		(uuid "680d6043-148a-4a49-8658-1d7ba093fc5e")
+	)
+	(wire
+		(pts
+			(xy 130.81 120.65) (xy 133.35 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e3f893b-0eb9-4461-86c5-c55d9996c7e4")
 	)
 	(wire
 		(pts
@@ -3285,7 +3488,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 120.65) (xy 133.35 120.65)
+			(xy 129.54 120.65) (xy 130.81 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3635,6 +3838,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 124.46) (xy 125.73 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eea7249d-5977-4310-a29e-0dc161e88792")
+	)
+	(wire
+		(pts
 			(xy 81.28 77.47) (xy 86.36 77.47)
 		)
 		(stroke
@@ -3702,6 +3915,16 @@
 			(type default)
 		)
 		(uuid "f6e9a55d-2be4-4cf0-9953-788cf7e9556e")
+	)
+	(wire
+		(pts
+			(xy 125.73 125.73) (xy 130.81 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8448050-0c2a-47c1-9726-c351dce8dbad")
 	)
 	(wire
 		(pts
@@ -3957,6 +4180,93 @@
 			(project "OneInchAD8015"
 				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 111.76 106.68 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c431d8a-0943-495b-9667-4d6d57eea21f")
+		(property "Reference" "C11"
+			(at 108.839 107.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 108.839 105.537 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 110.7948 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" ""
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1523"
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e2f119b-f9ae-4ee1-b4e9-33b17a42be9c")
+		)
+		(pin "2"
+			(uuid "2d7f79b8-f06b-43ff-b39d-42d01b381e73")
+		)
+		(instances
+			(project "OneInchAD8015"
+				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -4273,7 +4583,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "27abfd71-8f15-41b7-a116-fca66aefb374")
 		(property "Reference" "TP1"
 			(at 102.6668 53.9496 0)
@@ -4832,6 +5142,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 115.57 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c4e0c14-9d52-4c87-a80b-489b8abb53fa")
+		(property "Reference" "R10"
+			(at 117.348 124.5616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 117.348 126.873 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 113.792 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" ""
+			(at 115.57 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 115.57 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d320a63-59a9-4742-b473-dedddf7d6495")
+		)
+		(pin "2"
+			(uuid "0605765f-5b8e-4acd-8075-b83706f85a1a")
+		)
+		(instances
+			(project "OneInchAD8015"
+				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 121.92 111.76 0)
 		(unit 1)
@@ -5239,7 +5636,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "1.5k"
 			(at 135.89 171.45 90)
 			(effects
 				(font
@@ -5283,7 +5680,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22843"
 			(at 135.89 171.45 0)
 			(effects
 				(font
@@ -5444,93 +5841,6 @@
 			(project "OneInchAD8015"
 				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 115.57 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "639f7a6d-3060-4532-9e18-c04ac06a87f0")
-		(property "Reference" "R10"
-			(at 117.348 124.5616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22k"
-			(at 117.348 126.873 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.792 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" ""
-			(at 115.57 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C31850"
-			(at 115.57 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d99a99e-54be-4a7d-90a7-c25c713f1b5a")
-		)
-		(pin "2"
-			(uuid "1f46144b-5fcb-4546-b287-d82ab0983c2a")
-		)
-		(instances
-			(project "OneInchAD8015"
-				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6009,7 +6319,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1.5k"
 			(at 138.43 110.49 90)
 			(effects
 				(font
@@ -6053,7 +6363,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22843"
 			(at 138.43 110.49 0)
 			(effects
 				(font
@@ -6131,6 +6441,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C514255"
+			(at 93.98 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "fe148d3a-549b-434f-85d5-847cbf74e940")
 		)
@@ -6159,6 +6478,71 @@
 			(project ""
 				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89cefe94-0ab6-4e90-9ee1-1f4defe62e6e")
+		(property "Reference" "#PWR025"
+			(at 111.76 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.887 114.8842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02b05d8f-28dc-428d-8b0e-b4a64ba8424a")
+		)
+		(instances
+			(project "OneInchAD8015"
+				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6388,7 +6772,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "971635fd-42c4-4826-951c-7e112fd31afc")
 		(property "Reference" "D3"
 			(at 69.2658 67.2084 90)
@@ -6871,6 +7255,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer_Trim")
+		(at 125.73 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aafe3d59-c3fd-48b9-8895-ea77ce5fdd9c")
+		(property "Reference" "RV1"
+			(at 125.73 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 125.73 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical"
+			(at 125.73 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "trim"
+			(at 125.73 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C719186"
+			(at 125.73 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1076305-53d3-4212-a46f-d351214ae777")
+		)
+		(pin "2"
+			(uuid "5888530b-adb8-4862-af31-924e43272bb6")
+		)
+		(pin "3"
+			(uuid "8d797c65-abdb-4ab0-8d92-97d9909f6a88")
+		)
+		(instances
+			(project ""
+				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 93.98 111.76 0)
 		(unit 1)
@@ -7067,6 +7531,15 @@
 			)
 		)
 		(property "Description" "Low Power Single Operational Amplifier, SOT-23-5"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C471859"
 			(at 124.46 104.14 0)
 			(effects
 				(font
@@ -7664,7 +8137,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d847dd04-c4e4-40b9-b615-6ddf90cc4bd9")
 		(property "Reference" "TP2"
 			(at 55.6768 172.0596 0)
@@ -8114,7 +8587,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f06720c9-a528-4387-9dcf-38d86e79f332")
 		(property "Reference" "J1"
@@ -8133,7 +8606,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical"
 			(at 20.32 165.1 0)
 			(effects
 				(font
@@ -8260,93 +8733,6 @@
 			(project "OneInchAD8015"
 				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 125.73 120.65 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f4b50b57-2314-4399-9cdd-8c62dba5c527")
-		(property "Reference" "R7"
-			(at 126.8984 122.428 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 124.587 122.428 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 125.73 118.872 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 125.73 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 125.73 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" ""
-			(at 125.73 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25741"
-			(at 125.73 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2e5ff37-2ce7-4019-9768-8406c539929c")
-		)
-		(pin "2"
-			(uuid "65ccbeab-b821-42e7-8124-fdf9083538d0")
-		)
-		(instances
-			(project "OneInchAD8015"
-				(path "/be28d721-f6ac-4eff-bfeb-b5f4fb7465fa"
-					(reference "R7")
 					(unit 1)
 				)
 			)
